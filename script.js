@@ -121,7 +121,7 @@ function moveSnakeDown() {
     }
 }
 
-function moveSnakeLeft() {
+function moveSnakeLeft() {  
     if(velX != 1){
         velX = -1;
         velY = 0;
