@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snake Game</title>
+        <link rel="icon" type="image/x-icon" href="images.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <audio hidden autoplay id="audio-play">
+            <source src="Snake Game - Theme Song.mp3" type="audio/mp3" >
+        </audio>
+        <audio hidden id="sounds">
+            <source src="apple-eating-36127.mp3" type="audio/mp3" id="A">
+            <source src="mixkit-arcade-retro-game-over-213.wav" type="audio/mp3" id="B">
+        </audio>
+        <div class="heading-top">
+            <div class="heading-top-second">
+        <p class="heading-text">SNAKE_GAME</p>
+            </div>
+        </div>
+        <div class="container">
+            <canvas id="canvas"></canvas>
+            <div class="button-container">
+                <button class="up-btn" id="up-btn">↑</button>
+                <button class="left-btn" id="left-btn">←</button>
+                <button class="right-btn" id="right-btn">→</button>
+                <button class="down-btn" id="down-btn">↓</button>
+                <div id="score">SCORE: 0</div>
+                <p id="game-over"></p>
+                <button id="new-game" onclick="reloadPage()">New Game</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
