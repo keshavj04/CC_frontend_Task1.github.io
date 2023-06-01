@@ -115,7 +115,7 @@ function moveSnakeUp() {
     }
 }
 function moveSnakeDown() {
-    if (velY != 1){
+    if (velY != -1){
         velX = 0;
         velY = 1;
     }
